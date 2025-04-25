@@ -14,9 +14,13 @@ const Hero = () => {
           </div>
           <span className="ml-2 text-gray-300">12k+ trusted users</span>
         </div>
-        <div className="flex justify-center lg:justify-start">
-          <img className="w-36 sm:w-48 md:w-64 lg:w-64" src="/assets/explorebtn.svg" alt="Explore" />
-        </div>
+        <div className="flex justify-center lg:justify-start pt-8 sm:pt-0">
+  <img
+    className="w-[230px] sm:w-48 md:w-64 lg:w-64"
+    src="/assets/explorebtn.svg"
+    alt="Explore"
+  />
+</div>
       </div>
       
       <div className="flex-1 relative mt-8 lg:mt-0">
