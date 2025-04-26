@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row py-28 sm:py-12 px-4 sm:px-8 md:px-12 items-center gap-4 sm:gap-8 mb-16 sm:mb-24 lg:mb-32">
@@ -15,11 +15,17 @@ const Hero = () => {
           <span className="ml-2 text-gray-300">12k+ trusted users</span>
         </div>
         <div className="flex justify-center lg:justify-start pt-8 sm:pt-0">
-  <img
-    className="w-[230px] sm:w-48 md:w-64 lg:w-64"
-    src="/assets/explorebtn.svg"
-    alt="Explore"
-  />
+        <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ type: "spring", stiffness: 50, damping: 15 }}
+  className="w-[230px] sm:w-48 md:w-64 lg:w-64 py-4 bg-[#0CC0DF] text-white font-bold uppercase tracking-wider rounded-md shadow-md hover:bg-[#4fb3c4] transition-colors duration-300 flex justify-center items-center"
+  onClick={() => {/* Your button action here */}}
+>
+  EXPLORE FUNDRAISERS
+</motion.button>
 </div>
       </div>
       
